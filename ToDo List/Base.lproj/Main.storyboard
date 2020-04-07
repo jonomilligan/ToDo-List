@@ -38,10 +38,55 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="unl-HE-ukO" kind="show" identifier="moveToComplete" id="PEu-AV-ElF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33c-Qo-ZI5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="676.81159420289862" y="23.4375"/>
+        </scene>
+        <!--Complete To Do View Controller-->
+        <scene sceneID="Om8-7p-ofy">
+            <objects>
+                <viewController id="unl-HE-ukO" customClass="CompleteToDoViewController" customModule="ToDo_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5xg-oi-5cZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sT-bD-E1p">
+                                <rect key="frame" x="5" y="158" width="404" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUL-1h-jyv">
+                                <rect key="frame" x="173.5" y="285" width="67" height="30"/>
+                                <state key="normal" title="Complete"/>
+                                <connections>
+                                    <action selector="completeTapped:" destination="unl-HE-ukO" eventType="touchUpInside" id="iaX-Wt-NoL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WUL-1h-jyv" firstAttribute="centerX" secondItem="5xg-oi-5cZ" secondAttribute="centerX" id="1AR-nn-ze9"/>
+                            <constraint firstItem="WUL-1h-jyv" firstAttribute="top" secondItem="3sT-bD-E1p" secondAttribute="bottom" constant="80" id="AUk-H5-MG3"/>
+                            <constraint firstItem="3sT-bD-E1p" firstAttribute="centerX" secondItem="5xg-oi-5cZ" secondAttribute="centerX" id="S26-zb-DaD"/>
+                            <constraint firstItem="3sT-bD-E1p" firstAttribute="top" secondItem="cjT-wa-yOO" secondAttribute="top" constant="70" id="Wlq-E3-5aF"/>
+                            <constraint firstItem="3sT-bD-E1p" firstAttribute="leading" secondItem="cjT-wa-yOO" secondAttribute="leading" constant="5" id="jA1-Om-dSd"/>
+                            <constraint firstItem="cjT-wa-yOO" firstAttribute="trailing" secondItem="3sT-bD-E1p" secondAttribute="trailing" constant="5" id="k3G-0p-3eO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cjT-wa-yOO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iE2-hp-Sw6"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="3sT-bD-E1p" id="U4B-Pw-ZTi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxF-se-Kn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="726"/>
         </scene>
         <!--Add To Do View Controller-->
         <scene sceneID="e6h-8V-bmk">
