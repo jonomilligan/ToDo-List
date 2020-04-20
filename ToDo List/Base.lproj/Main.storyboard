@@ -117,8 +117,8 @@
                                 <rect key="frame" x="182.5" y="295" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sM2-Dz-Hyt">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addTapped:" destination="RGZ-ZF-6uN" eventType="touchUpInside" id="RtR-8Z-Ioz"/>
                                 </connections>
